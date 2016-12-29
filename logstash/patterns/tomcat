@@ -1,0 +1,3 @@
+TOMCATTIMESTAMP %{MONTHDAY}-%{MONTH}-%{YEAR}[T ]%{HOUR}:?%{MINUTE}(?::?%{SECOND})
+
+TOMCATLOG %{TOMCATTIMESTAMP:timestamp} %{DATA:severity} \[%{DATA:method}\] %{DATA:class} %{GREEDYDATA:content}

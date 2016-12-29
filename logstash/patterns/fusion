@@ -1,0 +1,3 @@
+FUSIONTIMESTAMP %{YEAR}/%{MONTHNUM}/%{MONTHDAY}[T ]%{HOUR}:?%{MINUTE}(?::?%{SECOND})
+
+FUSIONLOG %{FUSIONTIMESTAMP:timestamp} (?:%{LOGLEVEL:severity}) {1,2}\[%{DATA:system}\]\[%{WORD:catalog}\] %{JAVACLASS:class}:%{NUMBER:line} %{GREEDYDATA:content}

@@ -1,0 +1,1 @@
+PAYARALOG \[%{TIMESTAMP_ISO8601:timestamp}\] \[%{DATA:server_version}\] \[%{LOGLEVEL:severity}\] \[%{DATA}\] \[%{DATA:class}\] \[%{DATA:thread}\] \[%{DATA:timeMillis}\] \[%{DATA:levelValue}\] \[\[(?<content>(.|\n)*)\]\]
