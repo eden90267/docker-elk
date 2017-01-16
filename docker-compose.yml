@@ -11,7 +11,7 @@ services:
       - "9300:9300"
     volumes:
       - ./elasticsearch/config:/usr/share/elasticsearch/config
-      - /home/sit-elk/esdata:/usr/share/elasticsearch/data
+      - ../esdata:/usr/share/elasticsearch/data
     environment:
       ES_JAVA_OPTS: "-Xms2g -Xmx2g"
   logstash:
